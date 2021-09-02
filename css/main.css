@@ -1,1 +1,574 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input,
+select,
+textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+/* Basic */
+
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  -ms-overflow-style: scrollbar;
+}
+
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    min-width: 320px;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body.is-preload *,
+body.is-preload *:before,
+body.is-preload *:after {
+  -moz-animation: none !important;
+  -webkit-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+/* Type */
+
+body {
+  color: #434547;
+  background: -moz-radial-gradient(#d8dae2 15%, transparent 16%),
+    -moz-radial-gradient(#d8dae2 15%, transparent 16%), #dfe1e7;
+  background: -webkit-radial-gradient(#d8dae2 15%, transparent 16%),
+    -webkit-radial-gradient(#d8dae2 15%, transparent 16%), #dfe1e7;
+  background-position: 0 0, 80px 80px;
+
+  -webkit-background-size: 20px 20px;
+  -moz-background-size: 20px 20px;
+  background-size: 20px 20px;
+}
+::selection {
+  background: #ffd000;
+}
+body,
+input,
+select,
+textarea {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14pt;
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+@media screen and (max-width: 1680px) {
+  body,
+  input,
+  select,
+  textarea {
+    font-size: 11pt;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  body,
+  input,
+  select,
+  textarea {
+    font-size: 10pt;
+  }
+}
+
+a {
+  -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-bottom-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-bottom-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-bottom-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-bottom-color 0.2s ease-in-out;
+  border-bottom: dotted 1px;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom-color: transparent;
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.75em;
+  font-weight: 500;
+  margin: 0 0 0.65em 0;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: 600;
+  margin: 0 0 1em 0;
+}
+
+h4 {
+  font-size: 0.9em;
+  font-weight: 600;
+  margin: 0 0 1em 0;
+}
+
+h5 {
+  font-size: 0.8em;
+  font-weight: 600;
+  margin: 0 0 1em 0;
+}
+
+h6 {
+  font-size: 0.7em;
+  font-weight: 600;
+  margin: 0 0 1em 0;
+}
+
+.blanco {
+  color: #ffffff;
+}
+.bgblanco {
+  background-color: #ffffff;
+}
+
+.bgblanco {
+  background-color: #ffffff;
+}
+.amarillo {
+  color: #ffd000;
+}
+.bgamarillo {
+  background-color: #ffd000;
+}
+.bgsombra {
+  color: #ffffff;
+  text-shadow: 0px 0px 11px rgba(150, 150, 150, 0.3);
+}
+.sombreado {
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.1));
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.sombreado:hover {
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0));
+}
+.transparencia {
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+}
+
+.transparencia:hover {
+  opacity: 1;
+}
+.bgazul {
+  background: #91b8e3;
+  color: #ffffff;
+}
+.azul {
+  color: #000033;
+}
+
+.gordi {
+  font-weight: 700;
+}
+.gris {
+  opacity: 0.7;
+}
+.alaizquierda {
+  float: left;
+}
+.aladerecha {
+  float: right;
+}
+footer {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 0em;
+  margin-top: 3em;
+  clear: both;
+  height: auto;
+}
+
+.centrada {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.centrado {
+  text-align: center;
+}
+
+.navbar {
+  margin-bottom: 0em;
+}
+
+.navbar-collapse {
+  padding-left: 0em;
+}
+
+#menu_principal,
+.navbar-nav > li > .dropdown-menu {
+  background: #000;
+}
+
+#menu_principal a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar-default {
+  background: #fff;
+  box-shadow: none;
+  border-color: none;
+  border: 0px;
+}
+
+.navbar {
+  border: 0px;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-nav > li > .dropdown-menu > li.open > a,
+.navbar-nav > li > .dropdown-menu > li.active > a,
+.navbar-nav > li > .dropdown-menu > li > a.hover {
+  background: #aaa;
+}
+
+.btn-default {
+  background: #aaa;
+  text-shadow: none;
+}
+
+.clear {
+  clear: both;
+}
+
+div#mainmenu {
+  clear: both;
+}
+
+#controles {
+  margin-top: 1em;
+  text-align: right;
+}
+
+#btn_play,
+#btn_pause {
+  display: none;
+}
+
+#diapos {
+  padding: 1em;
+  background: #adadad;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+}
+
+#diapos:hover {
+  opacity: 0.9;
+}
+
+#diapos img {
+  height: 90px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  border: 3px solid #ffffff;
+}
+
+#diapos img.resaltada {
+  border: 3px solid #555;
+}
+
+#diapo_grande img {
+  width: 100%;
+  border: 3px solid #ffffff;
+}
+
+.scrolls {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 120px;
+  white-space: nowrap;
+}
+
+/* Let's get this party started */
+.scrolls::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+.scrolls::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+/* Handle */
+.scrolls::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background: #91b8e3;
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 180, 180, 0.5);
+}
+
+.imagen_left img {
+  width: 100%;
+  margin: 0px;
+}
+
+.slot-producto {
+  border: 1px solid #ccc;
+  padding-right: 2em;
+}
+
+footer {
+  clear: both;
+  margin-top: 2em;
+}
+
+#separador {
+  height: 10px;
+  background: #91b8e3;
+  width: 100%;
+  margin-bottom: 2em;
+  -webkit-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.48);
+  box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.48);
+}
+
+.btn-primary {
+  background: #91b8e3;
+  font-size: 0.8em;
+  text-align: center;
+  font-weight: bold;
+}
+
+#backtodo {
+  max-width: 1250px;
+  margin: 0px auto;
+  background-image: url("img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+video {
+  border: 3px solid #ffffff;
+}
+
+#subtitulos_field {
+  padding: 1em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  background: #444;
+  text-align: center;
+  color: #fff;
+  font-size: 1.1em;
+}
